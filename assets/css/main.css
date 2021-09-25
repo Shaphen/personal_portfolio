@@ -4178,6 +4178,33 @@ body.is-mobile #main > header {
 	display: block;
 }
 
+#peer-feedback-title,
+#peer-feedback-desc,
+#feedback-note {
+	cursor: default;
+}
+
+#feedback-note {
+	width: 100%;
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+}
+
+#past-proj-title,
+#past-proj-desc {
+	cursor: default;
+}
+
+#curr-tech-desc,
+.curr-tech-title {
+	cursor: default;
+}
+
+#welcome-title,
+#intro-p {
+	cursor: default;
+}
 
 /* Landing */
 
