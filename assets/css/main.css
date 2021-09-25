@@ -4057,51 +4057,48 @@ body.is-mobile #main > header {
 	/* margin-top: 25px; */
 }
 
-#favicon {
+.favicon {
 	font-size: 70px;
 	margin: 15px;
 }
 
-#icon-image {
+
+.icon-image {
 	width: 70px;
 }
 
-#ruby-icon {
+.ruby-icon {
 	font-size: 60px;
 	margin-top: 15px;
 	width: 75px;
 }
 
-#rails-icon {
+.rails-icon {
 	font-size: 100px
 }
 
-#icon-size {
+.icon-size {
 	font-size: 70px;
 }
 
 @media screen and (min-width: 1295px) {
-	#favicon {
+	.favicon {
 		font-size: 100px;
 	}
+	
 
-	#ruby-icon {
+	.ruby-icon {
 		font-size: 75px;
 		width: 100px;
 	}
 
-	#rails-icon {
+	.rails-icon {
 		font-size: 120px
 	}
 
-	#icon-size {
+	.icon-size {
 		font-size: 100px;
 	}
-}
-
-.fadeInRight {
-	animation: fadeInRight;
-	animation-duration: 0.8s;
 }
 
 .badcord-img, .dodge-img {
@@ -4111,8 +4108,8 @@ body.is-mobile #main > header {
 .badcord-img {
 	z-index: 1;
 	position: relative;
-    right: 90px;
-    top: 60px;
+    left: 82px;
+	bottom: 20px;
 
 	transition: all 0.3s;
 }
@@ -4125,7 +4122,8 @@ body.is-mobile #main > header {
 .dodge-img {
 	z-index: 0;
 	position: relative;
-    left: 82px;
+	right: 90px;
+    top: 85px;
 
 	transition: all 0.3s;
 }
@@ -4171,4 +4169,19 @@ body.is-mobile #main > header {
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
+	}
+
+	.fadeInRight {
+		animation: fadeInRight;
+		animation-duration: 0.8s;
+	}
+
+	.fadeInUp {
+		animation: fadeInUp;
+		animation-duration: 0.8s;
+	}
+
+	.fadeIn {
+		animation: fadeIn;
+		animation-duration: 0.8s;
 	}
