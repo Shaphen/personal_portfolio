@@ -4099,6 +4099,11 @@ body.is-mobile #main > header {
 	}
 }
 
+.fadeInRight {
+	animation: fadeInRight;
+	animation-duration: 0.8s;
+}
+
 .badcord-img, .dodge-img {
 	width: 450px;
 }

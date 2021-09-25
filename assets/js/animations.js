@@ -1,43 +1,23 @@
-// const scrollElement = document.querySelectorAll("#first-project");
+$(window).scroll(function () {
 
-// $(scrollElement).each(function () {
-//     if ($(window).scrollTop() + $(window).height() >= $(this).position().top
-//       && $(window).scrollTop() < $(this).position().top + $(this).height()) {
-//       $(this).addClass('fade-in-up');
-//     } else if ($(this).hasClass('fade-in-up')) {
-//       $(this).removeClass('fade-in-up');
-//     }
-// });
+  $('#badcord').each(function () {
+    if ($(window).scrollTop() + $(window).height() >= $(this).position().top
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fadeInRight'))) {
+      $(this).addClass('fadeInRight');
+    } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 200
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fadeInRight')) {
+      $(this).removeClass('fadeInRight');
+    }
+  });
 
-const scrollOffset = 100;
- 
-const scrollElement = document.querySelector(".js-scroll");
- 
-const elementInView = (el, offset = 0) => {
-  const elementTop = el.getBoundingClientRect().top;
- 
-  return (
-    elementTop <= 
-    ((window.innerHeight || document.documentElement.clientHeight) - offset)
-  );
-};
- 
-const displayScrollElement = () => {
-  scrollElement.classList.add('scrolled');
-}
- 
-const hideScrollElement = () => {
-  scrollElement.classList.remove('scrolled');
-}
- 
-const handleScrollAnimation = () => {
-  if (elementInView(scrollElement, scrollOffset)) {
-      displayScrollElement();
-  } else {
-    hideScrollElement();
-  }
-}
- 
-window.addEventListener('scroll', () => {
-  handleScrollAnimation();
-})
+  $('#dodge').each(function () {
+    if ($(window).scrollTop() + $(window).height() >= $(this).position().top
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fadeInRight'))) {
+      $(this).addClass('fadeInRight');
+    } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 200
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fadeInRight')) {
+      $(this).removeClass('fadeInRight');
+    }
+  });
+  
+});
