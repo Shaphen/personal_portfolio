@@ -4134,6 +4134,51 @@ body.is-mobile #main > header {
 	transform: scale(1.02);
 }
 
+.icon {
+	padding: 0px;
+	position: relative;
+}
+
+.icon-title-box {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	top: -14px;
+    font-size: 20px;
+	width: 100%;
+	text-align: center;
+	cursor: default;
+}
+
+.icon-title-box-2 {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	top: -31px;
+    font-size: 20px;
+	width: 100%;
+	text-align: center;
+	cursor: default;
+}
+
+.icon-title {
+	background-color: rgba(128,128,128,0.5);
+    border-radius: 9px;
+	width: fit-content;
+	padding: 3px 12px;
+	margin: 0px;
+	color: white;
+	display: none;
+
+	animation: fadeInUp;
+	animation-duration: 0.2s;
+}
+
+.icon:hover .icon-title {
+	display: block;
+}
+
+
 /* Landing */
 
 	body.landing #page-wrapper {
