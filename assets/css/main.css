@@ -4099,6 +4099,38 @@ body.is-mobile #main > header {
 	}
 }
 
+.badcord-img, .dodge-img {
+	width: 450px;
+}
+
+.badcord-img {
+	z-index: 1;
+	position: relative;
+    right: 90px;
+    top: 60px;
+
+	transition: all 0.3s;
+}
+
+.badcord-img:hover {
+	cursor: pointer;
+	transform: scale(1.02);
+}
+
+.dodge-img {
+	z-index: 0;
+	position: relative;
+    left: 82px;
+
+	transition: all 0.3s;
+}
+
+.dodge-img:hover {
+	z-index: 2;
+	cursor: pointer;
+	transform: scale(1.02);
+}
+
 /* Landing */
 
 	body.landing #page-wrapper {
