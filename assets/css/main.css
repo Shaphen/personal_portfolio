@@ -4040,6 +4040,56 @@ body.is-mobile #main > header {
 	padding: 2em 2em 0em 2em;
 }
 
+.icons-list {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-top: 60px;
+}
+
+#favicon {
+	font-size: 70px;
+	margin: 15px;
+}
+
+#icon-image {
+	width: 70px;
+}
+
+#ruby-icon {
+	font-size: 60px;
+	margin-top: 15px;
+	width: 75px;
+}
+
+#rails-icon {
+	font-size: 100px
+}
+
+#icon-size {
+	font-size: 70px;
+}
+
+@media screen and (min-width: 1200px) {
+	#favicon {
+		font-size: 100px;
+	}
+
+	#ruby-icon {
+		font-size: 75px;
+		width: 100px;
+	}
+
+	#rails-icon {
+		font-size: 120px
+	}
+
+	#icon-size {
+		font-size: 100px;
+	}
+}
+
 /* Landing */
 
 	body.landing #page-wrapper {
