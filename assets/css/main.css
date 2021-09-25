@@ -4048,6 +4048,15 @@ body.is-mobile #main > header {
 	margin-top: 60px;
 }
 
+.curr-tech-title {
+	margin-top: 25px;
+}
+
+#favicon, #ruby-icon, #rails-icon, #icon-size {
+	transition: all 0.5s;
+	/* margin-top: 25px; */
+}
+
 #favicon {
 	font-size: 70px;
 	margin: 15px;
@@ -4071,7 +4080,7 @@ body.is-mobile #main > header {
 	font-size: 70px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1295px) {
 	#favicon {
 		font-size: 100px;
 	}
