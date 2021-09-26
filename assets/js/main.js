@@ -82,6 +82,7 @@
 
 	// modals
 	const dodgeModal = document.getElementById("dodge-modal-box")
+	const dodgeModalContent = document.getElementById("dodge-modal-content")
 	const dodgeImage = document.getElementById("dodge")
 	const dodgeCloseButton = document.getElementById("dodge-modal-close")
 
@@ -93,7 +94,19 @@
 		dodgeModal.style.display = "none"
 	}
 
+	dodgeModal.onclick = function () {
+		dodgeModal.style.display = "none"
+	}
+
+	dodgeModalContent.addEventListener('click', dontClose);
+	function dontClose(e) {
+		e.stopPropagation();
+		e.stopImmediatePropagation();
+		return false;
+	}
+
 	const badcordModal = document.getElementById("badcord-modal-box")
+	const badcordModalContent = document.getElementById("badcord-modal-content")
 	const badcordImage = document.getElementById("badcord")
 	const badcordCloseButton = document.getElementById("badcord-modal-close")
 
@@ -105,7 +118,19 @@
 		badcordModal.style.display = "none"
 	}
 
+	badcordModal.onclick = function () {
+		badcordModal.style.display = "none"
+	}
+
+	badcordModalContent.addEventListener('click', dontClose);
+	function dontClose(e) {
+		e.stopPropagation();
+		e.stopImmediatePropagation();
+		return false;
+	}
+
 	const contactModal = document.getElementById("contact-modal-box")
+	const contactModalContent = document.getElementById("contact-modal-content")
 	const contact = document.getElementById("contact")
 	const contactCloseButton = document.getElementById("contact-modal-close")
 
@@ -115,6 +140,17 @@
 
 	contactCloseButton.onclick = function () {
 		contactModal.style.display = "none"
+	}
+
+	contactModal.onclick = function () {
+		contactModal.style.display = "none"
+	}
+
+	contactModalContent.addEventListener('click', dontClose);
+	function dontClose(e) {
+		e.stopPropagation();
+		e.stopImmediatePropagation();
+		return false;
 	}
 
 })(jQuery);
