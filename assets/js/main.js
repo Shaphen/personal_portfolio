@@ -131,10 +131,15 @@
 
 	const contactModal = document.getElementById("contact-modal-box")
 	const contactModalContent = document.getElementById("contact-modal-content")
-	const contact = document.getElementById("contact")
+	const contact1 = document.getElementById("contact")
+	const contact2 = document.getElementById("contact-intro")
 	const contactCloseButton = document.getElementById("contact-modal-close")
 
-	contact.onclick = function() {
+	contact1.onclick = function() {
+		contactModal.style.display = "block"
+	}
+
+	contact2.onclick = function() {
 		contactModal.style.display = "block"
 	}
 
