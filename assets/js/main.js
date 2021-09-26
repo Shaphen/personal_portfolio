@@ -105,4 +105,16 @@
 		badcordModal.style.display = "none"
 	}
 
+	const contactModal = document.getElementById("contact-modal-box")
+	const contact = document.getElementById("contact")
+	const contactCloseButton = document.getElementById("contact-modal-close")
+
+	contact.onclick = function() {
+		contactModal.style.display = "block"
+	}
+
+	contactCloseButton.onclick = function () {
+		contactModal.style.display = "none"
+	}
+
 })(jQuery);

@@ -4148,7 +4148,7 @@ body.is-mobile #main > header {
 	border-bottom: none;
 }
 
-#dodge-modal-box, #badcord-modal-box {
+#dodge-modal-box, #badcord-modal-box, #contact-modal-box {
 	display: none;
 	position: fixed;
 	z-index: 10;
@@ -4178,6 +4178,79 @@ body.is-mobile #main > header {
 
 	animation: fadeIn;
 	animation-duration: 0.5s;
+}
+
+#contact-modal-content {
+	position: absolute;
+    inset: 50% 0px 0px 50%;
+    border: none;
+    background: rgb(54, 57, 63);
+    overflow: hidden;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+    margin-left: -228px;
+    margin-top: -215px;
+    width: 455px;
+    height: 347px;
+    color: white;
+
+    animation: fadeIn;
+    animation-duration: 0.5s;
+}
+
+.contact-content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#contact-title {
+	font-size: 25px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+#contact-details {
+	width: 100%;
+    display: flex;
+}
+
+#email-title,
+#linkedin-title,
+#phone-title {
+	animation: fadeInLeft;
+	animation-duration: 0.3s;
+}
+
+#email-link, #linkedin-link, #resume-link {
+	animation: fadeInRight;
+	animation-duration: 0.3s;
+}
+
+#contact-modal-close {
+	position: relative;
+    left: 386px;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 2px 10px;
+}
+
+#linkedin-title {
+	margin-left: 61px;
+    margin-right: 74px;
+}
+
+#email-title {
+	margin-left: 73px;
+    margin-right: 100px;
+}
+
+#phone-title {
+	margin-left: 70px;
+    margin-right: 87px;
 }
 
 #dodge {
@@ -4317,6 +4390,14 @@ body.is-mobile #main > header {
 #cta-title,
 #cta-desc {
 	cursor: default;
+}
+
+#linkedin-link, 
+#resume-link, 
+#email-link {
+	border-bottom: none;
+    height: 27px;
+	color: #93CAED;
 }
 
 /* Landing */
