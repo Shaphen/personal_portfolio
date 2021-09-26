@@ -3452,7 +3452,6 @@ button,
 		position: absolute;
 		right: 0;
 		top: 0;
-		vertical-align: middle;
 		width: 7em;
 	}
 
@@ -4423,6 +4422,20 @@ body.is-mobile #main > header {
 	border-bottom: none;
     height: 27px;
 	color: #93CAED;
+}
+
+#about-title {
+	text-align: center;
+}
+
+#about-section-box {
+	padding: 6em 4em;
+}
+
+#about-link {
+	border: none;
+	color: #78bae4;
+	font-weight: 600;
 }
 
 /* Landing */
