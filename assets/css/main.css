@@ -4105,33 +4105,141 @@ body.is-mobile #main > header {
 	width: 450px;
 }
 
-.badcord-img {
+#badcord {
 	z-index: 1;
+	width: fit-content;
 	position: relative;
-    left: 82px;
+    left: 225px;
 	bottom: 20px;
 
 	transition: all 0.3s;
 }
 
-.badcord-img:hover {
+#badcord:hover {
 	cursor: pointer;
 	transform: scale(1.02);
 }
 
-.dodge-img {
+.dodge, .badcord {
+	position: relative;
+}
+
+#proj-links {
+	width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+	animation: fadeInRight;
+	animation-duration: 1s;
+}
+
+#github-link {
+	font-size: 19px;
+    margin-right: 15px;
+}
+
+#demo-button {
+	cursor: pointer;
+    margin-right: 58px;
+	color: #fff;
+    display: block;
+    font-size: 0.9em;
+    font-weight: 600;
+	border-bottom: none;
+}
+
+#dodge-modal-box, #badcord-modal-box {
+	display: none;
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+#modal-content {
+	position: absolute;
+    inset: 50% 0px 0px 50%;
+    border: none;
+    background: rgb(54, 57, 63);
+    overflow: hidden;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+    margin-left: -482px;
+    margin-top: -307px;
+    width: 955px;
+    height: 647px;
+    color: white;
+
+	animation: fadeIn;
+	animation-duration: 0.5s;
+}
+
+#dodge {
 	z-index: 0;
 	position: relative;
-	right: 90px;
+	right: 9px;
     top: 85px;
+	width: fit-content;
 
 	transition: all 0.3s;
 }
 
-.dodge-img:hover {
+#dodge:hover {
 	z-index: 2;
 	cursor: pointer;
 	transform: scale(1.02);
+}
+
+#dodge-modal-close, #badcord-modal-close {
+	cursor: pointer;
+	position: absolute;
+    right: 17px;
+    top: 15px;
+    font-size: 21px;
+    font-weight: 600;
+	padding: 5px 12px;
+
+	transition: all 0.5s;
+}
+
+#dodge-modal-close:hover, #badcord-modal-close:hover {
+	color: red;
+}
+
+#close-modal-message {
+	display: none;
+	position: absolute;
+	right: 55px;
+    top: 15px;
+    background: rgba(0,0,0,0.7);;
+    padding: 4px 8px;
+    border-radius: 6px;
+	font-size: 14px;
+
+	animation: fadeInLeft;
+	animation-duration: 0.2s;
+}
+
+#dodge-modal-close:hover + #close-modal-message,
+#badcord-modal-close:hover + #close-modal-message {
+	display: block;
+}
+
+.dodge-content, .badcord-content {
+	display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+}
+
+#project-description {
+	width: 100%;
+	margin: 30px 30px 6px;
 }
 
 .icon {
@@ -4203,6 +4311,11 @@ body.is-mobile #main > header {
 
 #welcome-title,
 #intro-p {
+	cursor: default;
+}
+
+#cta-title,
+#cta-desc {
 	cursor: default;
 }
 
