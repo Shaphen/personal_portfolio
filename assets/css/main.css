@@ -4136,6 +4136,8 @@ body.is-mobile #main > header {
 #github-link {
 	font-size: 19px;
     margin-right: 15px;
+
+	transition: all 0.3s;
 }
 
 #demo-button {
@@ -4146,9 +4148,18 @@ body.is-mobile #main > header {
     font-size: 0.9em;
     font-weight: 600;
 	border-bottom: none;
+
+	transition: all 0.3s;
 }
 
-#dodge-modal-box, #badcord-modal-box, #contact-modal-box {
+#github-link:hover, 
+#demo-button:hover {
+	color: #7275b3;
+}
+
+#dodge-modal-box, 
+#badcord-modal-box, 
+#contact-modal-box {
 	display: none;
 	position: fixed;
 	z-index: 10;
@@ -4245,6 +4256,12 @@ body.is-mobile #main > header {
 	animation-duration: 0.3s;
 }
 
+#email-link:hover, 
+#linkedin-link:hover, 
+#resume-link:hover {
+	color: #b0d7f0;
+} 
+
 #contact-modal-close {
 	position: relative;
     left: 386px;
@@ -4252,6 +4269,12 @@ body.is-mobile #main > header {
     font-weight: 600;
     cursor: pointer;
     padding: 2px 10px;
+
+	transition: all 0.5s;
+}
+
+#contact-modal-close:hover {
+	color: rgb(248, 76, 76);
 }
 
 #dodge {
@@ -4282,8 +4305,9 @@ body.is-mobile #main > header {
 	transition: all 0.5s;
 }
 
-#dodge-modal-close:hover, #badcord-modal-close:hover {
-	color: red;
+#dodge-modal-close:hover, 
+#badcord-modal-close:hover {
+	color: rgb(248, 76, 76);
 }
 
 #close-modal-message {
