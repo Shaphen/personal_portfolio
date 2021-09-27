@@ -4104,21 +4104,6 @@ body.is-mobile #main > header {
 	width: 450px;
 }
 
-#badcord {
-	z-index: 1;
-	width: fit-content;
-	position: relative;
-    left: 225px;
-	bottom: 20px;
-
-	transition: all 0.3s;
-}
-
-#badcord:hover {
-	cursor: pointer;
-	transform: scale(1.02);
-}
-
 .dodge, .badcord {
 	position: relative;
 }
@@ -4290,6 +4275,69 @@ body.is-mobile #main > header {
 	z-index: 2;
 	cursor: pointer;
 	transform: scale(1.02);
+}
+
+#badcord {
+	z-index: 1;
+	width: fit-content;
+	position: relative;
+    left: 225px;
+	bottom: 20px;
+
+	transition: all 0.3s;
+}
+
+#badcord:hover {
+	cursor: pointer;
+	transform: scale(1.02);
+}
+
+@media  screen and (max-width: 1280px){
+	#badcord {
+		left: 60px;
+    	bottom: 80px;
+	}
+
+	#dodge {
+		right: 50px;
+    	top: 30px;
+	}
+}
+
+@media  screen and (max-width: 980px) {
+	#badcord {
+		left: 322px;
+    	bottom: 70px;
+	}
+
+	#dodge {
+		left: 90px;
+    	top: 40px;
+	}
+}
+
+@media  screen and (max-width: 830px) {
+	#badcord {
+		left: 195px;
+    	bottom: 80px;
+	}
+
+	#dodge {
+		right: 50px;
+    	top: 30px;
+	}
+}
+
+@media  screen and (max-width: 680px) {
+	#badcord {
+		left: -16px;
+    	bottom: -5px;
+	}
+
+	#dodge {
+		left: -16px;
+    	top: 0px;
+	}
 }
 
 #dodge-modal-close, #badcord-modal-close {
