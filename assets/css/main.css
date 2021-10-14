@@ -4218,12 +4218,15 @@ body.is-mobile #main > header {
 	#badcord-modal-content {
 		width: 375px;
 		margin-left: -188px;
-		overflow-y: scroll;
+	}
+
+	#project-description {
+		margin-top: 10px;
 	}
 
 	#modal-image {
-		width: 500px;
-		margin-top: 45px;
+		width: 350px;
+		margin-top: 40px;
 	}
 
 	#demo-button {
