@@ -4234,6 +4234,10 @@ body.is-mobile #main > header {
     padding-bottom: 16px;
 }
 
+#contact-intro, #contact-skills {
+	cursor: pointer;
+}
+
 #email-title,
 #linkedin-title,
 #phone-title {

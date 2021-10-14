@@ -133,6 +133,7 @@
 	const contactModalContent = document.getElementById("contact-modal-content")
 	const contact1 = document.getElementById("contact")
 	const contact2 = document.getElementById("contact-intro")
+	const contact3 = document.getElementById("contact-skills")
 	const contactCloseButton = document.getElementById("contact-modal-close")
 
 	contact1.onclick = function() {
@@ -140,6 +141,9 @@
 	}
 
 	contact2.onclick = function() {
+		contactModal.style.display = "block"
+	}
+	contact3.onclick = function() {
 		contactModal.style.display = "block"
 	}
 
