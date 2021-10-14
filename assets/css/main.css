@@ -4190,6 +4190,10 @@ body.is-mobile #main > header {
 		margin-left: -266px;
 	}
 
+	#proj-links {
+		font-size: 18px;
+	}
+
 	#modal-image {
 		width: 500px;
 		margin-top: 45px;
@@ -4220,6 +4224,14 @@ body.is-mobile #main > header {
 	#modal-image {
 		width: 500px;
 		margin-top: 45px;
+	}
+
+	#demo-button {
+		margin-right: 15px;
+	}
+
+	#proj-links {
+		font-size: 15px;
 	}
 }
 
