@@ -4104,6 +4104,12 @@ body.is-mobile #main > header {
 	width: 450px;
 }
 
+@media screen and (max-width: 470px) {
+	.badcord-img, .dodge-img {
+		width: 375px;
+	}
+}
+
 .dodge, .badcord {
 	position: relative;
 }
@@ -4290,6 +4296,18 @@ body.is-mobile #main > header {
 #badcord:hover {
 	cursor: pointer;
 	transform: scale(1.02);
+}
+
+@media  screen and (min-width: 1550px){
+	#badcord {
+		left: 410px;
+    	bottom: -55px;
+	}
+
+	#dodge {
+		right: -89px;
+    	top: 125px;
+	}
 }
 
 @media  screen and (max-width: 1280px){
