@@ -129,6 +129,31 @@
 		return false;
 	}
 
+	const aniwikiModal = document.getElementById("aniwiki-modal-box")
+	const aniwikiModalContent = document.getElementById("aniwiki-modal-content")
+	const aniwikiImage = document.getElementById("aniwiki")
+	const aniwikiCloseButton = document.getElementById("aniwiki-modal-close")
+
+	aniwikiImage.onclick = function() {
+		aniwikiModal.style.display = "block"
+	}
+
+	aniwikiCloseButton.onclick = function () {
+		aniwikiModal.style.display = "none"
+	}
+
+	aniwikiModal.onclick = function () {
+		aniwikiModal.style.display = "none"
+	}
+
+	aniwikiModalContent.addEventListener('click', dontClose);
+	function dontClose(e) {
+		e.stopPropagation();
+		e.stopImmediatePropagation();
+		return false;
+	}
+
+
 	const contactModal = document.getElementById("contact-modal-box")
 	const contactModalContent = document.getElementById("contact-modal-content")
 	const contact1 = document.getElementById("contact")

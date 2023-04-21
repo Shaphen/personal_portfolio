@@ -4100,17 +4100,17 @@ body.is-mobile #main > header {
 	}
 }
 
-.badcord-img, .dodge-img {
+.badcord-img, .dodge-img, .aniwiki-img {
 	width: 450px;
 }
 
 @media screen and (max-width: 470px) {
-	.badcord-img, .dodge-img {
+	.badcord-img, .dodge-img, .aniwiki-img {
 		width: 375px;
 	}
 }
 
-.dodge, .badcord {
+.dodge, .badcord, .aniwiki {
 	position: relative;
 }
 
@@ -4143,13 +4143,28 @@ body.is-mobile #main > header {
 	transition: all 0.3s;
 }
 
+#aniwiki-demo-button {
+	cursor: pointer;
+    margin-right: 70px;
+	color: #fff;
+    display: block;
+    font-size: 0.9em;
+    font-weight: 600;
+	border-bottom: none;
+
+	transition: all 0.3s;
+}
+
+
 #github-link:hover, 
-#demo-button:hover {
+#demo-button:hover,
+#aniwiki-demo-button:hover {
 	color: #7275b3;
 }
 
 #dodge-modal-box, 
-#badcord-modal-box, 
+#badcord-modal-box,
+#aniwiki-modal-box, 
 #contact-modal-box {
 	display: none;
 	position: fixed;
@@ -4164,7 +4179,8 @@ body.is-mobile #main > header {
 }
 
 #dodge-modal-content, 
-#badcord-modal-content {
+#badcord-modal-content,
+#aniwiki-modal-content {
 	position: absolute;
     inset: 50% 0px 0px 50%;
     border: none;
@@ -4183,16 +4199,22 @@ body.is-mobile #main > header {
 	animation-duration: 0.5s;
 }
 
+.aniwiki-modal-img {
+	width: 82%;
+}
+
 @media screen and (min-width: 1670px) {
 	#dodge-modal-content, 
-	#badcord-modal-content {
+	#badcord-modal-content,
+	#aniwiki-modal-content {
 		height: 655px;
 	}
 }
 
 @media screen and (max-width: 960px) {
 	#dodge-modal-content, 
-	#badcord-modal-content {
+	#badcord-modal-content,
+	#aniwiki-modal-content {
 		width: 555px;
 		height: 600px;
 		margin-left: -266px;
@@ -4206,11 +4228,16 @@ body.is-mobile #main > header {
 		width: 500px;
 		margin-top: 45px;
 	}
+
+	#aniwiki-model-img {
+		width: 82%;
+	}
 }
 
 @media screen and (max-width: 580px) {
 	#dodge-modal-content, 
-	#badcord-modal-content {
+	#badcord-modal-content,
+	#aniwiki-modal-content {
 		width: 460px;
 		height: 570px;
 		margin-left: -235px;
@@ -4223,7 +4250,8 @@ body.is-mobile #main > header {
 
 @media screen and (max-width: 450px) {
 	#dodge-modal-content, 
-	#badcord-modal-content {
+	#badcord-modal-content,
+	#aniwiki-modal-content {
 		width: 375px;
 		margin-left: -188px;
 	}
@@ -4338,8 +4366,8 @@ body.is-mobile #main > header {
 #dodge {
 	z-index: 0;
 	position: relative;
-	right: 9px;
-    top: 85px;
+	right: -45px;
+    top: 95px;
 	width: fit-content;
 
 	transition: all 0.3s;
@@ -4362,6 +4390,23 @@ body.is-mobile #main > header {
 }
 
 #badcord:hover {
+	z-index: 2;
+	cursor: pointer;
+	transform: scale(1.02);
+}
+
+#aniwiki {
+	z-index: 1;
+	width: fit-content;
+	position: relative;
+    left: 125px;
+    bottom: 80px;
+
+	transition: all 0.3s;
+}
+
+#aniwiki:hover {
+	z-index: 2;
 	cursor: pointer;
 	transform: scale(1.02);
 }
@@ -4369,12 +4414,17 @@ body.is-mobile #main > header {
 @media  screen and (min-width: 1550px){
 	#badcord {
 		left: 410px;
-    	bottom: -55px;
+    	bottom: -15px;
+	}
+
+	#aniwiki {
+		left: 240px;
+    	bottom: 40px;
 	}
 
 	#dodge {
-		right: -89px;
-    	top: 125px;
+		right: -150px;
+    	top: 75px;
 	}
 }
 
@@ -4382,6 +4432,11 @@ body.is-mobile #main > header {
 	#badcord {
 		left: 60px;
     	bottom: 80px;
+	}
+
+	#aniwiki {
+		left: -2px;
+    	bottom: 130px;
 	}
 
 	#dodge {
@@ -4396,6 +4451,11 @@ body.is-mobile #main > header {
     	bottom: 70px;
 	}
 
+	#aniwiki {
+		left: 205px;
+    	bottom: 125px;
+	}
+
 	#dodge {
 		left: 90px;
     	top: 40px;
@@ -4406,6 +4466,11 @@ body.is-mobile #main > header {
 	#badcord {
 		left: 195px;
     	bottom: 80px;
+	}
+
+	#aniwiki {
+		left: 138px;
+    	bottom: 115px;
 	}
 
 	#dodge {
@@ -4420,13 +4485,18 @@ body.is-mobile #main > header {
     	bottom: -5px;
 	}
 
+	#aniwiki {
+		left: -16px;
+    	bottom: -10px;
+	}
+
 	#dodge {
 		left: -16px;
     	top: 0px;
 	}
 }
 
-#dodge-modal-close, #badcord-modal-close {
+#dodge-modal-close, #badcord-modal-close, #aniwiki-modal-close {
 	cursor: pointer;
 	position: absolute;
     right: 17px;
@@ -4439,7 +4509,8 @@ body.is-mobile #main > header {
 }
 
 #dodge-modal-close:hover, 
-#badcord-modal-close:hover {
+#badcord-modal-close:hover,
+#aniwiki-modal-close:hover {
 	color: rgb(248, 76, 76);
 }
 
@@ -4458,11 +4529,12 @@ body.is-mobile #main > header {
 }
 
 #dodge-modal-close:hover + #close-modal-message,
-#badcord-modal-close:hover + #close-modal-message {
+#badcord-modal-close:hover + #close-modal-message,
+#aniwiki-modal-close:hover + #close-modal-message {
 	display: block;
 }
 
-.dodge-content, .badcord-content {
+.dodge-content, .badcord-content, .aniwiki-content {
 	display: flex;
     justify-content: center;
 	flex-wrap: wrap;
