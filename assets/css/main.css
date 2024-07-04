@@ -4131,7 +4131,7 @@ body.is-mobile #main > header {
 	transition: all 0.3s;
 }
 
-#demo-button {
+#demo-button, #demo-button-disabled {
 	cursor: pointer;
     margin-right: 58px;
 	color: #fff;
@@ -4141,6 +4141,11 @@ body.is-mobile #main > header {
 	border-bottom: none;
 
 	transition: all 0.3s;
+}
+
+#demo-button-disabled {
+	pointer-events: none;
+	color: #696977;
 }
 
 #aniwiki-demo-button {
@@ -4669,6 +4674,12 @@ body.is-mobile #main > header {
     font-size: 10px;
     opacity: 0.7;
 	margin: 0px 60px;
+}
+
+#supported-systems-dep {
+    font-size: 10px;
+    opacity: 0.7;
+	margin: 0px 15px;
 }
 
 @media screen and (max-width: 450px) {

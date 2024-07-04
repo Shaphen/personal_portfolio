@@ -584,4 +584,8 @@
 
 	};
 
+	// Dynamically get year for footer
+	let theYear = new Date().getFullYear()
+  	document.getElementById("year").innerHTML = theYear;
+
 })(jQuery);

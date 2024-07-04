@@ -190,4 +190,24 @@ $(window).scroll(function () {
     }
   });
 
+  $('#fifteenth').each(function () {
+    if ($(window).scrollTop() + $(window).height() >= $(this).position().top
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fadeInUp'))) {
+      $(this).addClass('fadeInUp');
+    } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 200
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fadeInUp')) {
+      $(this).removeClass('fadeInUp');
+    }
+  });
+
+  $('#sixteenth').each(function () {
+    if ($(window).scrollTop() + $(window).height() >= $(this).position().top
+      && $(window).scrollTop() < $(this).position().top + $(this).height() && !($(this).hasClass('fadeInUp'))) {
+      $(this).addClass('fadeInUp');
+    } else if (($(window).scrollTop() + $(window).height() <= $(this).position().top - 200
+      || $(window).scrollTop() > $(this).position().top + $(this).height()) && $(this).hasClass('fadeInUp')) {
+      $(this).removeClass('fadeInUp');
+    }
+  });
+
 });
